@@ -35,11 +35,10 @@ public class Clock : MonoBehaviour {
 
         //Analog Elements
         analogSecondHand.transform.rotation = Quaternion.Euler(0, 0, secondsInt * transformSecondsAndMinutes);
-        analogMinuteHand.transform.rotation = Quaternion.Euler(0, 0, minutesInt * transformSecondsAndMinutes);
-        analogHourHand.transform.rotation = Quaternion.Euler(0, 0, hoursInt * transformHours);
+        analogMinuteHand.transform.rotation = Quaternion.Euler(0, 0, minutesInt * transformSecondsAndMinutes + secondsInt * (transformSecondsAndMinutes / 60));
+        analogHourHand.transform.rotation = Quaternion.Euler(0, 0, hoursInt * transformHours + minutesInt * (transformSecondsAndMinutes / 12));
 
         //Digital Elements
-        //digits.text = hoursVariable + " : " + minutesVariable + " : " + secondsVariable;
         digits.text = DateTime.Now.ToString("HH:mm:ss");
 
 
