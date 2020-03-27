@@ -1,6 +1,7 @@
 # Analog-Digital-Clock
 
-Showcase of a simplistic clock that has both analog and digital elements
+Showcase of a simplistic clock that has both analog and digital elements.
+
 Digital clock is in 24h format, the analog clock works as the standard that you expect in any analog clock.
 
 # HOW TO RUN 
