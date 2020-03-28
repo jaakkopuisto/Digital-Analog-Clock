@@ -1,7 +1,8 @@
 # Analog-Digital-Clock
 
-Showcase of a simplistic clock that has both analog and digital elements
+Showcase of a simplistic clock that has both analog and digital elements.
 
+Digital clock is in 24h format, the analog clock works as the standard that you expect in any analog clock.
 
 # HOW TO RUN 
 
@@ -23,3 +24,6 @@ Analog clock:
 Same as above, but here there is no text, only the three hands of the clock.
 With public gameobject references to each hand, all hands are referenced from the inspector.
 The project uses Quaternion.euler to set the current time to move the hands to their right places, by adjusting the Z value accordingly.
+
+To make the hour and minute hands move more realisticly, I've made it so that the hour hand also uses the minute hand to move itself forward between two hours, so it doesn't just jump instantly to the next. Same goes with the minute hand, but using the second hand of course.
+
